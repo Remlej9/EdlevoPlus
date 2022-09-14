@@ -7,7 +7,7 @@
   "permissions": ["tabs", "http://*/*", "https://*/*"],
   "browser_specific_settings": {
     "gecko": {
-      "update_url": "https://example.com/updates.json"
+      "update_url": "https://github.com/Remlej9/EdlevoPlus/blob/main/updates.json"
     }
   },
   "content_scripts": [

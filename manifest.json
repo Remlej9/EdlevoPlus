@@ -1,7 +1,7 @@
 {
   "name": "Edlevo+",
-  "version": "0.1.3",
-  "description": "Addons for Edlevo",
+  "version": "0.1.4",
+  "description": "Addons for Edlevo at https://education.service.tieto.com/\n\nThis addon summarizes your grades into a nice looking pie-chart which you can enable by clicking a link at the top of the grade-table. ",
   "manifest_version": 2,
   "permissions": ["tabs", "http://*/*", "https://*/*"],
   "browser_specific_settings": {

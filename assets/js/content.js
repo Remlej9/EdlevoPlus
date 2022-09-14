@@ -179,6 +179,31 @@ for (let i = 0; i < grade.length; ++i) {
   if (grade[i] == "F") Fcount++;
 }
 
+if (Acount == 0) {
+  datalabelA.remove();
+  legendtextA.remove();
+}
+if ((Bcount == 0)) {
+  datalabelB.remove();
+  legendtextB.remove();
+}
+if ((Ccount == 0)) {
+  datalabelC.remove();
+  legendtextC.remove();
+}
+if ((Dcount == 0)) {
+  datalabelD.remove();
+  legendtextD.remove();
+}
+if ((Ecount == 0)) {
+  datalabelE.remove();
+  legendtextE.remove();
+}
+if ((Fcount == 0)) {
+  datalabelF.remove();
+  legendtextF.remove();
+}
+
 let complete = Acount + Bcount + Ccount + Dcount + Ecount + Fcount;
 let letterover50 = "";
 

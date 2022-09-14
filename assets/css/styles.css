@@ -1,0 +1,91 @@
+.pie {
+	margin-bottom: 20px;
+  border-radius: 100%;
+  height: calc(var(--size, 200) * 1px);
+  overflow: hidden;
+  position: relative;
+  width: calc(var(--size, 200) * 1px);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.pie__segment {
+  --a: calc(var(--over50, 0) * -100%);
+  --b: calc((1 + var(--over50, 0)) * 100%);
+  --degrees: calc((var(--offset, 0) / 100) * 360);
+  -webkit-clip-path: polygon(var(--a) var(--a), var(--b) var(--a), var(--b) var(--b), var(--a) var(--b));
+  clip-path: polygon(var(--a) var(--a), var(--b) var(--a), var(--b) var(--b), var(--a) var(--b));
+  height: 100%;
+  position: absolute;
+  transform: translate(0, -50%) rotate(90deg) rotate(calc(var(--degrees) * 1deg));
+  transform-origin: 50% 100%;
+  width: 100%;
+  z-index: calc(1 + var(--over50));
+}
+.pie__segment:after,
+.pie__segment:before {
+  background: var(--bg, #e74c3c);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.pie__segment:before {
+  --degrees: calc((var(--value, 45) / 100) * 360);
+  /*content: attr(data-value);*/
+  transform: translate(0, 100%) rotate(calc(var(--degrees) * 1deg));
+  transform-origin: 50% 0%;
+}
+.pie__segment:after {
+  opacity: var(--over50, 0);
+}
+
+.cover {
+	position: absolute;
+	top: 21%;
+	left: 21%;
+	width: 58%;
+	height: 58%;
+	border-radius: 100%;
+	background-color: white;
+	z-index: 99;
+}
+
+.pielabel {
+	--degrees: calc((var(--offset, 0) / 100) * 360);
+	position: absolute;
+	top: 90%;
+	left: 8%;
+	transform: rotate(-90deg) rotate(calc(-1 * var(--degrees) * 1deg));
+  	transform-origin: center;
+	z-index: 99;
+}
+
+/*.legend {
+  background-color: #dddddd;
+}*/
+
+.piecontainer {
+  /*background-color: #aaaaaa;*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.legendtext {
+  width: 35px;
+  height: 25px;
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colorcircle {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-left: 3px;
+}

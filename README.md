@@ -3,7 +3,7 @@
 
 Edlevo+ är ett visuellt webbläsartillägg som samlar dina betyg i Edlevo till ett cirkeldiagram där du enkelt ser hur många betyg du har och i vilka ämnen.  
 
-**Detta tillägg sparar, samlar, publicerar eller på något annat sätt läser/publicerar dina betyg**  
+**Detta tillägg sparar inte, samlarinte, publicerar inte eller på något annat sätt läser/publicerar dina betyg**  
 Alla betyg läses av lokalt och visualiseras lokalt. Ingenting sparas i cache eller skickas via någon server.  
 
 ## Instruktioner för installation

@@ -17,11 +17,11 @@ Extrahera mappen med ett arkivprogram som tillexempel [7-zip](http://www.7-zip.o
 <details>
 <summary>Visa bilder</summary>
 <div>
-<img src="https://imgur.com/vqFwyN0", "screenshot1">
-<img src="https://imgur.com/vUz2lke", "screenshot2">
-<img src="https://imgur.com/iofK8BY", "screenshot3">
-<img src="https://imgur.com/yKfSYAy", "screenshot4">
-<img src="https://imgur.com/AOqmBry", "screenshot5">
-<img src="https://imgur.com/MwFCOBq", "screenshot6">
+<img src="https://imgur.com/vqFwyN0.png", "screenshot1">
+<img src="https://imgur.com/vUz2lke.png", "screenshot2">
+<img src="https://imgur.com/iofK8BY.png", "screenshot3">
+<img src="https://imgur.com/yKfSYAy.png", "screenshot4">
+<img src="https://imgur.com/AOqmBry.png", "screenshot5">
+<img src="https://imgur.com/MwFCOBq.png", "screenshot6">
 </div>
 </details>

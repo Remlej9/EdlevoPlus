@@ -10,7 +10,7 @@ Alla betyg läses av lokalt och visualiseras lokalt. Ingenting sparas i cache el
 
 **Firefox**  
 * Gå till [EdlevoPlus/Release](https://github.com/Remlej9/EdlevoPlus/releases)  
-* Klicka på länken märkt: *Firefox* *Release*  
+* Klicka på länken märkt: *Firefox* *Release* i den senaste versionen
 * **Klart!**  
 
 **Google Chrome:**  

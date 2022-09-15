@@ -10,14 +10,16 @@ Alla betyg läses av lokalt och visualiseras lokalt. Ingenting sparas i cache el
 
 **Google Chrome:**  
 
-Gå till [EdlevoPlus/Release](https://github.com/Remlej9/EdlevoPlus/releases)  
-Ladda ner `EdlevoPlusChrome.zip`  
-Extrahera mappen med ett arkivprogram som tillexempel [7-zip](http://www.7-zip.org/)  
-Öppna Chrome och följ stegen på bilderna nedan:  
+* Gå till [EdlevoPlus/Release](https://github.com/Remlej9/EdlevoPlus/releases)  
+* Ladda ner `EdlevoPlusChrome.zip`  
+* Extrahera mappen med ett arkivprogram som tillexempel [7-zip](http://www.7-zip.org/)  
+* Öppna Chrome och följ stegen på bilderna nedan:  
 <details>
 <summary>Visa bilder</summary>
 <div>
+Klicka på de tre prickarna i övre högra hörnet:  
 <img src="https://imgur.com/vqFwyN0.png", "screenshot1">  
+Klicka _Fler_ _verktyg_ och sedan _Tillägg_:  
 <img src="https://imgur.com/vUz2lke.png", "screenshot2">  
 <img src="https://imgur.com/iofK8BY.png", "screenshot3">  
 <img src="https://imgur.com/yKfSYAy.png", "screenshot4">  

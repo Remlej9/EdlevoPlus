@@ -17,13 +17,17 @@ Alla betyg läses av lokalt och visualiseras lokalt. Ingenting sparas i cache el
 <details>
 <summary>Visa bilder</summary>
 <div>
-Klicka på de tre prickarna i övre högra hörnet:  
-<img src="https://imgur.com/vqFwyN0.png", "screenshot1">  
-Klicka _Fler_ _verktyg_ och sedan _Tillägg_:  
-<img src="https://imgur.com/vUz2lke.png", "screenshot2">  
-<img src="https://imgur.com/iofK8BY.png", "screenshot3">  
-<img src="https://imgur.com/yKfSYAy.png", "screenshot4">  
-<img src="https://imgur.com/AOqmBry.png", "screenshot5">  
-<img src="https://imgur.com/MwFCOBq.png", "screenshot6">  
+Klicka på de tre prickarna i övre högra hörnet:<br />
+<img src="https://imgur.com/vqFwyN0.png", "screenshot1"><br />  
+Klicka <i>Fler verktyg</i> och sedan <i>Tillägg</i>:<br />
+<img src="https://imgur.com/vUz2lke.png", "screenshot2"><br /> 
+Aktivera <i>Programmerarläge</i>:<br />
+<img src="https://imgur.com/iofK8BY.png", "screenshot3"><br />
+Läs in ett okomprimerat tillägg:<br />
+<img src="https://imgur.com/yKfSYAy.png", "screenshot4"><br /> 
+Välj den extraherade mappen:<br />
+<img src="https://imgur.com/AOqmBry.png", "screenshot5"><br />
+<b>Klart!</b><br />
+<img src="https://imgur.com/MwFCOBq.png", "screenshot6"><br />
 </div>
 </details>

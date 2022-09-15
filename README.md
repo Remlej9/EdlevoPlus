@@ -6,7 +6,7 @@ Edlevo+ är ett visuellt webbläsartillägg som samlar dina betyg i Edlevo till 
 **Detta tillägg sparar, samlar, publicerar eller på något annat sätt läser/publicerar dina betyg**  
 Alla betyg läses av lokalt och visualiseras lokalt. Ingenting sparas i cache eller skickas via någon server.  
 
-# Instruktioner för installation
+## Instruktioner för installation
 
 **Firefox**  
 * Gå till [EdlevoPlus/Release](https://github.com/Remlej9/EdlevoPlus/releases)  
@@ -35,4 +35,12 @@ Välj den extraherade mappen:<br />
 <b>Klart!</b><br />
 <img src="https://imgur.com/MwFCOBq.png", "screenshot6"><br />
 </div>
-</details>
+</details>  
+
+## Author
+
+* Remlej9  
+
+## License
+
+This app is under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).

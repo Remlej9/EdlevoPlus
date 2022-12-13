@@ -14,6 +14,12 @@ var pieE = document.createElement("div");
 var pieF = document.createElement("div");
 var cover = document.createElement("div");
 var container = document.createElement("div");
+var meritcontainer = document.createElement("div");
+var merittitle = document.createElement("div");
+var merittext = document.createElement("h1");
+var meritcontent = document.createElement("div");
+var meritcontenttext = document.createElement("h1");
+var meritcontentadd = document.createElement("h2");
 var legend = document.createElement("div");
 var legendtextA = document.createElement("div");
 var legendtextB = document.createElement("div");
@@ -36,6 +42,19 @@ var datalabelF = document.createElement("label");
 
 var childCut = children.substring(children.indexOf("Avslutade Kurser") + 200);
 childCut = childCut.substring(1, childCut.indexOf("</tbody>"));
+
+meritcontainer.className = "meritcontainer";
+merittitle.className = "merittitle";
+merittext.className = "merittext";
+meritcontent.className = "meritcontent";
+meritcontenttext.className = "meritcontenttext";
+meritcontentadd.className = "meritcontentadd";
+meritcontainer.appendChild(merittitle);
+meritcontainer.appendChild(meritcontent);
+merittitle.appendChild(merittext);
+meritcontent.appendChild(meritcontenttext);
+meritcontent.appendChild(meritcontentadd);
+merittext.innerHTML = "Meritvärde";
 
 container.classList.add("piecontainer")
 legend.classList.add("legend")
@@ -118,6 +137,7 @@ legendtextE.appendChild(cE);
 legendtextF.appendChild(cF);
 canva.appendChild(cover);
 
+container.appendChild(meritcontainer);
 
 let activated = false;
 activationText.addEventListener(
@@ -146,12 +166,18 @@ activationContainer.appendChild(activationText);
 var i = 0;
 const grade = [];
 const course = [];
+const points = [];
+
+//console.log(childCut);
 
 while (childCut.indexOf(",") > 0) {
+  //Get the grade
   grade[i] = childCut.substring(
     childCut.indexOf(",") - 1,
     childCut.indexOf(",")
   );
+
+  //Get the course name
   var courseCut = childCut.substring(0, childCut.indexOf(","));
   courseCut = courseCut.substring(0, courseCut.lastIndexOf("<td>"));
   courseCut = courseCut.substring(0, courseCut.lastIndexOf("<td>"));
@@ -159,6 +185,21 @@ while (childCut.indexOf(",") > 0) {
     courseCut.lastIndexOf("<td>") + 4,
     courseCut.lastIndexOf("</td>")
   );
+
+//Get the points
+    var pointsCut = childCut.substring(0, childCut.indexOf(","));
+    pointsCut = pointsCut.substring(0, pointsCut.indexOf('<td nowrap="">'));
+    points[i] = pointsCut.substring(
+        pointsCut.lastIndexOf("<td>") + 4,
+        pointsCut.lastIndexOf("</td>")
+    );
+
+    points[i] = points[i].replace(/\s/g, '');
+    points[i] = points[i].replace("p", '');
+
+    points[i] = parseInt(points[i]);
+
+    //console.log(grade[i] + "" + course[i] + "" + points[i]);
   childCut = childCut.substring(childCut.indexOf(",") + 1);
   i += 1;
 }
@@ -226,6 +267,36 @@ if (Fcount > (complete / 2)) {
   letterover50 = "F";
 }
 
+//calculate meritvärdet
+let meritpoints = 0;
+let gpoints = 0;
+for (let i = 0; i < grade.length; ++i) {
+  if (grade[i] == "A") {
+    meritpoints += 20 * points[i];
+  }
+  if (grade[i] == "B") {
+    meritpoints += 17.5 * points[i];
+  }
+  if (grade[i] == "C") {
+    meritpoints += 15 * points[i];
+  }
+  if (grade[i] == "D") {
+    meritpoints += 12.5 * points[i];
+  }
+  if (grade[i] == "E") {
+    meritpoints += 10 * points[i];
+  }
+  if (grade[i] == "F") {
+    meritpoints += 0 * points[i];
+  }
+    gpoints += points[i];
+}
+let merit = (meritpoints / gpoints).toFixed(1);
+console.log(merit);
+
+meritcontenttext.innerHTML = merit;
+meritcontentadd.innerHTML = " ± 1.0";
+
 let divider = 100 / complete;
 Acount *= divider;
 Bcount *= divider;
@@ -235,7 +306,6 @@ Ecount *= divider;
 Fcount *= divider;
 
 let count = 0;
-
 
 if (letterover50 == "A") {
   pieA.setAttribute("style", "--offset: " + count + "; --value: " + Acount + "; --bg: #CDA2C7; --over50: 1;");

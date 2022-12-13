@@ -89,3 +89,42 @@
   border-radius: 100%;
   margin-left: 3px;
 }
+
+.meritcontainer {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meritcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.meritcontentadd {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    margin-left: 5px;
+    color: #ff006e;
+}
+
+.merittext {
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.meritcontenttext {
+    font-size: 35px !important;
+    font-weight: 100;
+    color: #ff006e;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
